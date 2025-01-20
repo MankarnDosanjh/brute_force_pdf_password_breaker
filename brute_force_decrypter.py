@@ -29,7 +29,7 @@ count = 0
 with open(text_file) as fhandle:
     passwords = fhandle.readlines()
 
-# Thing
+# Thing other thing
 if reader.is_encrypted:
     for word in passwords:
         count += 1

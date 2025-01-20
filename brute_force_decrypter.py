@@ -10,20 +10,14 @@ from pypdf import PdfReader, errors
 # Print out password if decryption is successful and move onto next file.
 
 # Prompts user for folder and validates input.
-# pdf = Path(input("PDF file to brute force:\n"))
-
-# NOTE: Variable for quicker testing. DELETE ONCE FINISHED.
-pdf = Path(r'C:\Users\Manka\Documents\Programming\Automate the Boring Stuff with Python\Chapter 15 - Working with PDF and Word documents\brute_force_pdf_password_breaker\encrypted.pdf')
+pdf = Path(input("PDF file to brute force:\n"))
 
 if not pdf.is_file() and pdf.suffix != '.pdf':
     print("ERROR - INVALID DIRECTORY!")
     quit()
 
 # Prompts user for password text file and validates input.
-# text_file = Path(input("\nText file storing password attempts:\n"))
-
-# NOTE: Variable for quicker testing. DELETE ONCE FINISHED.
-text_file = Path(r'C:\Users\Manka\Documents\Programming\Automate the Boring Stuff with Python\Chapter 15 - Working with PDF and Word documents\brute_force_pdf_password_breaker\dictionary.txt')
+text_file = Path(input("\nText file storing password attempts:\n"))
 
 if not text_file.is_file() and text_file.suffix != '.txt':
     print("ERROR - VALID TEXT FILE NOT PROVIDED!")
